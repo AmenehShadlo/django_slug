@@ -1,0 +1,22 @@
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="mainborder">
+        <div class="row" style="padding: 20px;">
+            <p>title: </p>
+            <p>
+                {{formData.title}}
+            </p>
+            <p>content: </p>
+            <p>
+                {{formData.content}}
+            </p>
+            <p>
+                author: {{formData.author}}
+            </p>
+            
+        </div>
+    </div>
+    <div class="bottonborder">
+        <button type="submit" class="btn btn-success">ذخیره</button>
+    </div>
+</form>
